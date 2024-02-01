@@ -4,18 +4,15 @@ Link;
 const Navbar = () => {
   return (
     <div className="p-5 bg-green-300">
-      <ul className="flex  justify-end space-x-10">
-        <li>
-          {/*  <a href="/">Home</a> */}
+      <ul className="flex  justify-end space-x-10 p-2">
+        <li className="bg-green-500 text-white font-semibold rounded p-2 hover:bg-green-600 hover:text-gray-800">
           <Link to={"/"}>Home</Link>
         </li>
-        <li>
-          {/* <a href="/about">About</a> */}
+        <li className="bg-green-500 text-white font-semibold rounded p-2 hover:bg-green-600 hover:text-gray-800">
           <Link to={"/about"}>About</Link>
         </li>
-        <li>
-          {/* <a href="/menu">Menu</a> */}
-          <Link to={"/menu"}>Menu</Link>
+        <li className="bg-green-500 text-white font-semibold rounded p-2 hover:bg-green-600 hover:text-gray-800">
+          <Link to={"/menu"}>Technologies</Link>
         </li>
       </ul>
     </div>

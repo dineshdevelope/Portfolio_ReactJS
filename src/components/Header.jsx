@@ -1,61 +1,65 @@
 const Header = () => {
-  const ArrayFormat = [
-    {
-      id: 1,
-      name: "Dinesh S",
-      desc: "Learning React Js",
-    },
-    {
-      id: 2,
-      name: "Dinesh Singaram",
-      desc: "Learning React Js With Example Concept",
-    },
-    {
-      id: 3,
-      name: "Dinesh Kumar",
-      desc: "Learning React Js With Real Time Example",
-    },
-    {
-      id: 4,
-      name: "Dinesh Nkl",
-      desc: "Learning React Js Using Build A Project",
-    },
-  ];
-  const mapMethod = ArrayFormat.map((map) => {
-    return (
-      <div
-        className="bg-white p-5 rounded flex items-center space-x-10 mb-5"
-        key={map.id}
-      >
-        <img
-          src="https://www.abrilliants.com/wp-content/uploads/2023/05/1631110818-logo-react-js.png"
-          alt="React Js Logo"
-          className="w-28"
-        />
-        <div className="space-y-2">
-          <h1>{map.name}</h1>
-          <h1>{map.desc}</h1>
-        </div>
-      </div>
-    );
-  });
-
-  /*   console.log(mapMethod); */
   return (
-    <div className="m-10 bg-green-100">
-      <h4 className="text-2xl font-extralight mb-5 ">Current Works</h4>
-      {/* <div className="bg-white p-10 rounded flex items-center space-x-10 ">
-        <img
-          src="https://www.abrilliants.com/wp-content/uploads/2023/05/1631110818-logo-react-js.png"
-          alt="React Js Logo"
-          className="w-28"
-        />
-        <div className="space-y-2">
-          <h1>Hello</h1>
-          <h1>Hi</h1>
+    <div className=" bg-green-100">
+      <section class="hero-section">
+        <div>
+          <div>
+            <h4 title="Hello Buddy">
+              Hi there,<span class="waving-hand">👋</span>
+            </h4>
+            <h2 class="hero-section-title">
+              I'm <span class="logo-name"> Dinesh</span>
+            </h2>
+            <p class="hero-section-desc">
+              Intrested in working on Frontend, Backend, API's, Databases and
+              currently learning new things.I particularly enjoy making coding a
+              delightful and interactive experience, bringing a touch of fun to
+              every project.
+            </p>
+          </div>
+
+          <ul class="social-icon">
+            <li>
+              <a href="https://www.facebook.com/dineshdotnet/" target="_blank">
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/dinesh-s-0a90b3114/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin fa-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/dineshindoteng/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/DINESHS1997D" target="_blank">
+                <i class="fa-brands fa-twitter fa-2xl"></i>
+              </a>
+            </li>
+          </ul>
+
+          <div>
+            <button class="btn btn-primary">Hire Me</button>
+            <button class="btn">Download CV</button>
+          </div>
         </div>
-      </div> */}
-      {mapMethod}
+
+        <div class="hero-img">
+          <img
+            src="https://png.pngtree.com/png-clipart/20230913/original/pngtree-programmer-clipart-developer-sitting-behind-his-computer-in-glasses-cartoon-vector-png-image_11075227.png"
+            width="400"
+          />
+        </div>
+      </section>
     </div>
   );
 };

@@ -367,3 +367,18 @@ textarea {
     width: 100%;
   }
 }
+
+.left {
+  flex: 1;
+  padding: 30px;
+}
+.left a {
+  text-decoration: none;
+  color: black;
+}
+.left p {
+  line-height: 2;
+}
+.left ul li {
+  line-height: 2;
+}

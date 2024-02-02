@@ -3,18 +3,35 @@ import { Link } from "react-router-dom";
 Link;
 const Navbar = () => {
   return (
-    <div className="p-5 bg-green-300">
-      <ul className="flex  justify-end space-x-10 p-2">
-        <li className="bg-green-500 text-white font-semibold rounded p-2 hover:bg-green-600 hover:text-gray-800">
-          <Link to={"/"}>Home</Link>
-        </li>
-        <li className="bg-green-500 text-white font-semibold rounded p-2 hover:bg-green-600 hover:text-gray-800">
-          <Link to={"/about"}>About</Link>
-        </li>
-        <li className="bg-green-500 text-white font-semibold rounded p-2 hover:bg-green-600 hover:text-gray-800">
-          <Link to={"/menu"}>Technologies</Link>
-        </li>
-      </ul>
+    <div className="p-5 bg-gray-400">
+      <div className="flex justify-between">
+        <div className="text-2xl font-semibold text-white ">
+          Dinesh Portfolio
+        </div>
+        <div>
+          {" "}
+          <ul className="flex  justify-end space-x-10 font-semibold ">
+            <li className="bg-white p-2 rounded hover:bg-gray-800 hover:text-white">
+              <Link to={"/"}>Home</Link>
+            </li>
+            <li className="bg-white p-2 rounded hover:bg-gray-800 hover:text-white">
+              <Link to={"/about"}>About</Link>
+            </li>
+            <li className="bg-white p-2 rounded hover:bg-gray-800 hover:text-white">
+              <Link to={"/menu"}>Skills</Link>
+            </li>
+
+            <li className="bg-white p-2 rounded hover:bg-gray-800 hover:text-white">
+              <a
+                href="https://github.com/dineshdevelope/Portfolio_ReactJS"
+                target="blank"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

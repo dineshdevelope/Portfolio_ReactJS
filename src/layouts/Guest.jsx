@@ -5,13 +5,10 @@ import Navbar from "../components/Navbar";
 
 const GuestLayout = () => {
   return (
-    <div className="bg-green-300 min-h-screen">
+    <div className="bg-green-100 min-h-screen">
       <Navbar />
 
       <div className="bg-red-100 ">
-        {/*  <Header />
-
-        <MainPage /> */}
         <Outlet />
       </div>
     </div>
